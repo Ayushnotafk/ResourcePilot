@@ -64,8 +64,8 @@ const listAssets = async (query, user) => {
   return { assets: rows, meta: { page, limit, total: count } };
 };
 
-const getAssetById = async (id) => {
-  const asset = await Asset.findByPk(id, {
+const getAssetById = async (id, transaction = null) => {
+  const options = {
     include: [
       ...assetIncludes,
       { model: AssetDocument, as: 'documents' },
@@ -73,10 +73,11 @@ const getAssetById = async (id) => {
         model: AssetStatusHistory,
         as: 'statusHistory',
         include: [{ model: User, as: 'changer', attributes: ['id', 'firstName', 'lastName'] }],
-        order: [['createdAt', 'DESC']],
       },
     ],
-  });
+  };
+  if (transaction) options.transaction = transaction;
+  const asset = await Asset.findByPk(id, options);
 
   if (!asset) throw ApiError.notFound('Asset not found');
   return asset;
@@ -128,7 +129,7 @@ const createAsset = async (data, userId, req) => {
       req,
     });
 
-    return getAssetById(asset.id);
+    return getAssetById(asset.id, t);
   });
 };
 
@@ -218,7 +219,7 @@ const transitionAsset = async (id, toStatus, userId, reason, req) => {
       req,
     });
 
-    return getAssetById(id);
+    return getAssetById(id, t);
   });
 };
 
