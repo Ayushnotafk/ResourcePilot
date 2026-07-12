@@ -1,0 +1,73 @@
+const ASSET_STATUS = {
+  DRAFT: 'draft',
+  IN_STOCK: 'in_stock',
+  ASSIGNED: 'assigned',
+  UNDER_MAINTENANCE: 'under_maintenance',
+  LOST: 'lost',
+  RETIRED: 'retired',
+  DISPOSED: 'disposed',
+};
+
+const ASSET_CONDITION = ['excellent', 'good', 'fair', 'poor', 'damaged'];
+
+const ASSET_TRANSITIONS = {
+  [ASSET_STATUS.DRAFT]: [ASSET_STATUS.IN_STOCK, ASSET_STATUS.DISPOSED],
+  [ASSET_STATUS.IN_STOCK]: [ASSET_STATUS.ASSIGNED, ASSET_STATUS.UNDER_MAINTENANCE, ASSET_STATUS.RETIRED],
+  [ASSET_STATUS.ASSIGNED]: [ASSET_STATUS.IN_STOCK, ASSET_STATUS.UNDER_MAINTENANCE, ASSET_STATUS.LOST],
+  [ASSET_STATUS.UNDER_MAINTENANCE]: [ASSET_STATUS.IN_STOCK, ASSET_STATUS.ASSIGNED, ASSET_STATUS.RETIRED],
+  [ASSET_STATUS.LOST]: [ASSET_STATUS.RETIRED],
+  [ASSET_STATUS.RETIRED]: [ASSET_STATUS.DISPOSED],
+  [ASSET_STATUS.DISPOSED]: [],
+};
+
+const ASSIGNMENT_REQUEST_STATUS = {
+  DRAFT: 'draft',
+  SUBMITTED: 'submitted',
+  APPROVED: 'approved',
+  REJECTED: 'rejected',
+  CANCELLED: 'cancelled',
+};
+
+const ASSIGNMENT_STATUS = {
+  ACTIVE: 'active',
+  RETURNED: 'returned',
+  OVERDUE: 'overdue',
+  LOST: 'lost',
+};
+
+const WORK_ORDER_STATUS = {
+  DRAFT: 'draft',
+  SCHEDULED: 'scheduled',
+  IN_PROGRESS: 'in_progress',
+  COMPLETED: 'completed',
+  CANCELLED: 'cancelled',
+};
+
+const RESERVATION_STATUS = {
+  PENDING: 'pending',
+  CONFIRMED: 'confirmed',
+  CANCELLED: 'cancelled',
+  COMPLETED: 'completed',
+  NO_SHOW: 'no_show',
+};
+
+const PURCHASE_REQUEST_STATUS = {
+  DRAFT: 'draft',
+  SUBMITTED: 'submitted',
+  APPROVED: 'approved',
+  ORDERED: 'ordered',
+  RECEIVED: 'received',
+  REJECTED: 'rejected',
+  CANCELLED: 'cancelled',
+};
+
+module.exports = {
+  ASSET_STATUS,
+  ASSET_CONDITION,
+  ASSET_TRANSITIONS,
+  ASSIGNMENT_REQUEST_STATUS,
+  ASSIGNMENT_STATUS,
+  WORK_ORDER_STATUS,
+  RESERVATION_STATUS,
+  PURCHASE_REQUEST_STATUS,
+};
