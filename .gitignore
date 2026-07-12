@@ -54,4 +54,8 @@ yarn-error.log*
 next-env.d.ts
 
 /lib/generated/prisma
->>>>>>> b1b3da919fe0aaa999be1141cdf6f40c0f3a7912
+
+# Machine Learning Service Ignored Files
+ml_service/venv/
+ml_service/__pycache__/
+*.pkl
