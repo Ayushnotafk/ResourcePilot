@@ -1,0 +1,18 @@
+date,assetTag,assetName,assetCategory,department,location,status,dailyUsageHours,bookingCount,allocationActive,conditionScore,daysSinceMaintenance,maintenanceRequests,maintenanceEvent,maintenancePriority,issueType,failureRisk,nextDayFailure
+2026-06-01,AST-1001,Dell Latitude 7440,Laptop,Information Technology,IT Warehouse,AVAILABLE,0,0,0,4.5,12,0,0,, ,0.05,0
+2026-06-02,AST-1001,Dell Latitude 7440,Laptop,Information Technology,IT Warehouse,ALLOCATED,7,0,1,4.4,13,0,0,, ,0.10,0
+2026-06-03,AST-1001,Dell Latitude 7440,Laptop,Information Technology,IT Warehouse,ALLOCATED,8,0,1,4.2,14,1,0,MEDIUM,software,0.18,0
+2026-06-04,AST-1001,Dell Latitude 7440,Laptop,Information Technology,IT Warehouse,UNDER_MAINTENANCE,1,0,0,4.0,0,1,1,HIGH,software,0.25,0
+2026-06-05,AST-1002,Apple MacBook Pro 16,Laptop,Information Technology,IT Office,ALLOCATED,8,0,1,4.8,6,0,0,, ,0.07,0
+2026-06-06,AST-1002,Apple MacBook Pro 16,Laptop,Information Technology,IT Office,ALLOCATED,8,0,1,4.7,7,1,0,LOW,hardware,0.12,0
+2026-06-07,AST-1002,Apple MacBook Pro 16,Laptop,Information Technology,IT Office,ALLOCATED,7,0,1,4.6,8,0,0,, ,0.10,0
+2026-06-08,AST-1002,Apple MacBook Pro 16,Laptop,Information Technology,IT Office,ALLOCATED,8,1,1,4.5,9,1,0,MEDIUM,hardware,0.22,1
+2026-06-05,AST-1003,HP ProDesk 600 G9,Desktop,Finance,Finance Office,UNDER_MAINTENANCE,2,0,0,3.2,0,1,1,HIGH,hardware,0.45,1
+2026-06-06,AST-1003,HP ProDesk 600 G9,Desktop,Finance,Finance Office,UNDER_MAINTENANCE,1,0,0,3.0,1,1,1,HIGH,hardware,0.50,1
+2026-06-07,AST-1003,HP ProDesk 600 G9,Desktop,Finance,Finance Office,AVAILABLE,0,0,0,3.1,1,0,0,, ,0.38,0
+2026-06-08,AST-1003,HP ProDesk 600 G9,Desktop,Finance,Finance Office,ALLOCATED,6,0,1,3.0,2,0,0,, ,0.40,0
+2026-06-09,AST-1003,HP ProDesk 600 G9,Desktop,Finance,Finance Office,ALLOCATED,8,0,1,2.8,3,1,0,HIGH,hardware,0.60,1
+2026-06-04,AST-1004,Logitech Conference Camera,AV Equipment,Human Resources,Conference Room A,AVAILABLE,2,1,0,4.3,20,0,0,, ,0.08,0
+2026-06-05,AST-1004,Logitech Conference Camera,AV Equipment,Human Resources,Conference Room A,BOOKED,4,1,0,4.2,21,0,0,, ,0.12,0
+2026-06-06,AST-1004,Logitech Conference Camera,AV Equipment,Human Resources,Conference Room A,AVAILABLE,0,0,0,4.1,22,1,0,LOW,electrical,0.18,0
+2026-06-07,AST-1004,Logitech Conference Camera,AV Equipment,Human Resources,Conference Room A,UNDER_MAINTENANCE,1,0,0,3.9,0,1,1,MEDIUM,electrical,0.27,0

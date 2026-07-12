@@ -1,0 +1,323 @@
+{
+  "departments": [
+    {
+      "id": "dept-1",
+      "name": "Information Technology",
+      "headId": "user-2",
+      "status": "ACTIVE",
+      "createdAt": "2026-06-01T08:00:00.000Z",
+      "updatedAt": "2026-06-01T08:00:00.000Z"
+    },
+    {
+      "id": "dept-2",
+      "name": "Human Resources",
+      "headId": "user-5",
+      "status": "ACTIVE",
+      "createdAt": "2026-06-01T08:00:00.000Z",
+      "updatedAt": "2026-06-01T08:00:00.000Z"
+    },
+    {
+      "id": "dept-3",
+      "name": "Finance",
+      "headId": "user-8",
+      "status": "ACTIVE",
+      "createdAt": "2026-06-01T08:00:00.000Z",
+      "updatedAt": "2026-06-01T08:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1",
+      "email": "admin@example.com",
+      "password": "Admin@123",
+      "name": "System Admin",
+      "role": "ADMIN",
+      "departmentId": "dept-1",
+      "createdAt": "2026-06-01T08:00:00.000Z",
+      "updatedAt": "2026-06-01T08:00:00.000Z"
+    },
+    {
+      "id": "user-2",
+      "email": "it-head@example.com",
+      "password": "Password123",
+      "name": "Sofia Patel",
+      "role": "HEAD",
+      "departmentId": "dept-1",
+      "createdAt": "2026-06-01T08:10:00.000Z",
+      "updatedAt": "2026-06-01T08:10:00.000Z"
+    },
+    {
+      "id": "user-3",
+      "email": "tech-manager@example.com",
+      "password": "Manager@123",
+      "name": "Carlos Moreno",
+      "role": "MANAGER",
+      "departmentId": "dept-1",
+      "createdAt": "2026-06-01T08:20:00.000Z",
+      "updatedAt": "2026-06-01T08:20:00.000Z"
+    },
+    {
+      "id": "user-4",
+      "email": "jane.doe@example.com",
+      "password": "JanePass1",
+      "name": "Jane Doe",
+      "role": "EMPLOYEE",
+      "departmentId": "dept-1",
+      "createdAt": "2026-06-01T08:30:00.000Z",
+      "updatedAt": "2026-06-01T08:30:00.000Z"
+    },
+    {
+      "id": "user-5",
+      "email": "hr-head@example.com",
+      "password": "Password123",
+      "name": "Anita Shah",
+      "role": "HEAD",
+      "departmentId": "dept-2",
+      "createdAt": "2026-06-01T08:40:00.000Z",
+      "updatedAt": "2026-06-01T08:40:00.000Z"
+    },
+    {
+      "id": "user-6",
+      "email": "hr-employee@example.com",
+      "password": "HR2026!",
+      "name": "Marcus Lee",
+      "role": "EMPLOYEE",
+      "departmentId": "dept-2",
+      "createdAt": "2026-06-01T08:50:00.000Z",
+      "updatedAt": "2026-06-01T08:50:00.000Z"
+    },
+    {
+      "id": "user-7",
+      "email": "finance-manager@example.com",
+      "password": "Finance!23",
+      "name": "Amina Williams",
+      "role": "MANAGER",
+      "departmentId": "dept-3",
+      "createdAt": "2026-06-01T09:00:00.000Z",
+      "updatedAt": "2026-06-01T09:00:00.000Z"
+    },
+    {
+      "id": "user-8",
+      "email": "finance-head@example.com",
+      "password": "FinanceHead1",
+      "name": "Liam Chen",
+      "role": "HEAD",
+      "departmentId": "dept-3",
+      "createdAt": "2026-06-01T09:10:00.000Z",
+      "updatedAt": "2026-06-01T09:10:00.000Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-1",
+      "tag": "AST-1001",
+      "name": "Dell Latitude 7440",
+      "category": "Laptop",
+      "serial": "DL-7440-001",
+      "cost": 1450.0,
+      "condition": "GOOD",
+      "location": "IT Warehouse",
+      "status": "AVAILABLE",
+      "isShared": false,
+      "photo": "https://example.com/photos/dell-7440.jpg",
+      "createdAt": "2026-06-01T09:30:00.000Z",
+      "updatedAt": "2026-06-01T09:30:00.000Z"
+    },
+    {
+      "id": "asset-2",
+      "tag": "AST-1002",
+      "name": "Apple MacBook Pro 16",
+      "category": "Laptop",
+      "serial": "MBP16-2026-002",
+      "cost": 2800.0,
+      "condition": "NEW",
+      "location": "IT Office",
+      "status": "ALLOCATED",
+      "isShared": false,
+      "photo": "https://example.com/photos/macbook-pro-16.jpg",
+      "createdAt": "2026-06-01T09:35:00.000Z",
+      "updatedAt": "2026-07-01T10:00:00.000Z"
+    },
+    {
+      "id": "asset-3",
+      "tag": "AST-1003",
+      "name": "HP ProDesk 600 G9",
+      "category": "Desktop",
+      "serial": "HP-600G9-003",
+      "cost": 950.0,
+      "condition": "FAIR",
+      "location": "Finance Office",
+      "status": "UNDER_MAINTENANCE",
+      "isShared": false,
+      "photo": "https://example.com/photos/hp-prodesk-600.jpg",
+      "createdAt": "2026-06-01T09:40:00.000Z",
+      "updatedAt": "2026-07-05T08:00:00.000Z"
+    },
+    {
+      "id": "asset-4",
+      "tag": "AST-1004",
+      "name": "Logitech Conference Camera",
+      "category": "AV Equipment",
+      "serial": "LOGI-CAM-004",
+      "cost": 450.0,
+      "condition": "GOOD",
+      "location": "Conference Room A",
+      "status": "AVAILABLE",
+      "isShared": true,
+      "photo": "https://example.com/photos/logitech-cam.jpg",
+      "createdAt": "2026-06-01T09:45:00.000Z",
+      "updatedAt": "2026-07-07T11:00:00.000Z"
+    },
+    {
+      "id": "asset-5",
+      "tag": "AST-1005",
+      "name": "Projector Epson EB-X41",
+      "category": "AV Equipment",
+      "serial": "EPSON-X41-005",
+      "cost": 750.0,
+      "condition": "POOR",
+      "location": "Conference Room B",
+      "status": "UNDER_MAINTENANCE",
+      "isShared": true,
+      "photo": "https://example.com/photos/epson-x41.jpg",
+      "createdAt": "2026-06-01T09:50:00.000Z",
+      "updatedAt": "2026-07-08T12:00:00.000Z"
+    },
+    {
+      "id": "asset-6",
+      "tag": "AST-1006",
+      "name": "Cisco Meraki MX67",
+      "category": "Network",
+      "serial": "CMX67-006",
+      "cost": 1200.0,
+      "condition": "GOOD",
+      "location": "IT Rack Room",
+      "status": "AVAILABLE",
+      "isShared": false,
+      "photo": "https://example.com/photos/meraki-mx67.jpg",
+      "createdAt": "2026-06-01T09:55:00.000Z",
+      "updatedAt": "2026-06-15T14:00:00.000Z"
+    }
+  ],
+  "allocations": [
+    {
+      "id": "alloc-1",
+      "assetId": "asset-2",
+      "employeeId": "user-4",
+      "expectedReturnDate": "2026-08-01T17:00:00.000Z",
+      "returned": false,
+      "conditionNotes": "New laptop issued for quarterly analytics project.",
+      "createdAt": "2026-07-01T10:05:00.000Z",
+      "updatedAt": "2026-07-01T10:05:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking-1",
+      "assetId": "asset-4",
+      "userId": "user-3",
+      "startTime": "2026-07-15T09:00:00.000Z",
+      "endTime": "2026-07-15T11:00:00.000Z",
+      "status": "UPCOMING",
+      "createdAt": "2026-07-05T12:00:00.000Z"
+    },
+    {
+      "id": "booking-2",
+      "assetId": "asset-5",
+      "userId": "user-6",
+      "startTime": "2026-07-03T14:00:00.000Z",
+      "endTime": "2026-07-03T16:00:00.000Z",
+      "status": "COMPLETED",
+      "createdAt": "2026-07-01T09:30:00.000Z"
+    }
+  ],
+  "maintenances": [
+    {
+      "id": "maint-1",
+      "assetId": "asset-3",
+      "issue": "Occasional boot failure after windows update.",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "createdById": "user-4",
+      "approvedById": "user-2",
+      "resolutionNotes": "Reinstall pending; diagnostics initiated.",
+      "createdAt": "2026-07-05T08:15:00.000Z",
+      "updatedAt": "2026-07-08T09:20:00.000Z"
+    },
+    {
+      "id": "maint-2",
+      "assetId": "asset-5",
+      "issue": "Projector lamp flickering occasionally.",
+      "priority": "MEDIUM",
+      "status": "PENDING",
+      "createdById": "user-3",
+      "approvedById": null,
+      "resolutionNotes": null,
+      "createdAt": "2026-07-08T11:30:00.000Z",
+      "updatedAt": "2026-07-08T11:30:00.000Z"
+    }
+  ],
+  "auditCycles": [
+    {
+      "id": "audit-1",
+      "name": "Q3 IT Asset Audit",
+      "scope": "IT Department",
+      "status": "ACTIVE",
+      "createdById": "user-2",
+      "createdAt": "2026-07-01T07:00:00.000Z",
+      "closedAt": null
+    }
+  ],
+  "auditItems": [
+    {
+      "id": "audit-item-1",
+      "cycleId": "audit-1",
+      "assetId": "asset-1",
+      "status": "VERIFIED",
+      "notes": "Asset checked and matched tag.",
+      "checkedAt": "2026-07-10T10:00:00.000Z"
+    },
+    {
+      "id": "audit-item-2",
+      "cycleId": "audit-1",
+      "assetId": "asset-5",
+      "status": "DAMAGED",
+      "notes": "Projector under repair, lamp needs replacement.",
+      "checkedAt": "2026-07-10T10:15:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "user-4",
+      "message": "Your laptop allocation is active until 2026-08-01.",
+      "type": "ALLOCATED",
+      "isRead": false,
+      "createdAt": "2026-07-01T10:10:00.000Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "user-3",
+      "message": "Conference Camera booking confirmed for 2026-07-15.",
+      "type": "BOOKING_CONFIRMED",
+      "isRead": false,
+      "createdAt": "2026-07-05T12:05:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-1",
+      "userId": "user-2",
+      "action": "CREATE_ASSET",
+      "details": "{\"assetId\":\"asset-1\",\"name\":\"Dell Latitude 7440\"}",
+      "createdAt": "2026-06-01T09:30:00.000Z"
+    },
+    {
+      "id": "log-2",
+      "userId": "user-4",
+      "action": "REQUEST_MAINTENANCE",
+      "details": "{\"assetId\":\"asset-3\",\"issue\":\"Boot failure\"}",
+      "createdAt": "2026-07-05T08:15:00.000Z"
+    }
+  ]
+}

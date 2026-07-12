@@ -1,0 +1,19 @@
+{
+  "departments": [
+    {"id": "dept-1", "name": "Information Technology", "headId": "user-2", "status": "ACTIVE"}
+  ],
+  "users": [
+    {"id": "user-4", "email": "jane.doe@example.com", "name": "Jane Doe", "role": "EMPLOYEE", "departmentId": "dept-1"}
+  ],
+  "assets": [
+    {"id": "asset-1", "tag": "AST-1001", "name": "Dell Latitude 7440", "category": "Laptop", "cost": 1450.0, "condition": "GOOD", "status": "AVAILABLE"},
+    {"id": "asset-3", "tag": "AST-1003", "name": "HP ProDesk 600 G9", "category": "Desktop", "cost": 950.0, "condition": "FAIR", "status": "UNDER_MAINTENANCE"},
+    {"id": "asset-5", "tag": "AST-1005", "name": "Projector Epson EB-X41", "category": "AV Equipment", "cost": 750.0, "condition": "POOR", "status": "UNDER_MAINTENANCE"}
+  ],
+  "maintenances": [
+    {"id": "maint-1", "assetId": "asset-3", "issue": "Occasional boot failure", "priority": "HIGH", "status": "IN_PROGRESS"}
+  ],
+  "auditItems": [
+    {"id": "audit-item-2", "assetId": "asset-5", "status": "DAMAGED", "notes": "Projector lamp needs replacement"}
+  ]
+}
