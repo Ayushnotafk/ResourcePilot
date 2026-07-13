@@ -17,6 +17,7 @@
 body {
   font-family: 'Inter', sans-serif;
   @apply bg-surface text-[#14171c] antialiased;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
